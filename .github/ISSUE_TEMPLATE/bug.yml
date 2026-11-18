@@ -1,0 +1,19 @@
+name: Bug
+description: Something looks wrong or crashes
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What happened
+      description: What you ran, what you expected, what you got. Screenshots help a lot.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Transcript sample
+      description: A few words of the JSON you passed in (cut it down, no private content).
+      render: json
+  - type: input
+    attributes:
+      label: Versions
+      placeholder: wordpop 0.1.0, Python 3.12, ffmpeg 7.1, Windows 11

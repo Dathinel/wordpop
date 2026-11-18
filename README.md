@@ -100,7 +100,8 @@ hook_font=None, watermark=None, watermark_size="small", margin_v=None)`
 ## Contributing
 
 Issues and PRs welcome, especially new styles (with a screenshot) and transcript
-formats that `normalize_words` doesn't read yet.
+formats that `normalize_words` doesn't read yet. See [CONTRIBUTING.md](CONTRIBUTING.md)
+and the [good first issues](https://github.com/tamim0077/wordpop/labels/good%20first%20issue).
 
 ```bash
 pip install -e ".[test]"

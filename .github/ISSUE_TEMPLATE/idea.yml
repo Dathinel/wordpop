@@ -1,0 +1,10 @@
+name: Idea / new style
+description: A feature, a caption style, or a transcript format you want
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: What do you want
+      description: For a style, link a short that uses it or attach a screenshot.
+    validations:
+      required: true
