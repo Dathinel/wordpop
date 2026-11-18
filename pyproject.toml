@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wordpop"
+version = "0.1.0"
+description = "Word-by-word short-form captions (TikTok / Reels / Shorts style) as ASS subtitles, from any word-level transcript."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Mustafizur Rahman" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["captions", "subtitles", "ass", "whisper", "tiktok", "shorts", "reels", "ffmpeg", "karaoke"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Video",
+]
+
+[project.urls]
+Homepage = "https://github.com/tamim0077/wordpop"
+Issues = "https://github.com/tamim0077/wordpop/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+wordpop = "wordpop.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wordpop"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
